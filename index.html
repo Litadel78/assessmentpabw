@@ -5,40 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profil dan Peminjaman Buku</title>
 <script>
-// NOMOR 4
+// SOAL NOMOR 4
 let buku = [
   {"nama": "sherlock", "jumlah": 2},
   {"nama": "lupin", "jumlah": 2},
   {"nama": "aladin", "jumlah": 2},
 ];
-// NOMOR 3
+// SOAL NOMOR 3
 function cekBuku() {
   var jumlah = document.getElementById('jumlah').value;
   var bukuDipilih = document.getElementById('buku').value;
-//   NOMOR 5
+//   SOAL NOMOR 5
   if (jumlah === '' || parseInt(jumlah) <= 0) {
     alert('Jumlah tidak boleh kosong atau Nol!');
     return;
   }
-//   NOMOR 6
+//   SOAL NOMOR 6
   var bukuTersedia = buku.find(b => b.nama === bukuDipilih);
   if (!bukuTersedia) {
     alert('Buku tidak ditemukan!');
     return;
   }
-//   NOMOR 7
+//   SOAL NOMOR 7
   if (parseInt(jumlah) > bukuTersedia.jumlah) {
     alert('Jumlah buku tidak tersedia!');
     return;
   }
-//   NOMOR 8
+//   SOAL NOMOR 8
   alert('Silahkan ambil buku Anda!');
 }
 </script>
 </head>
 <body>
 
-<!-- NOMOR 1 -->
+<!-- SOAL NOMOR 1 -->
 <div>
   <img src="Foto Formal_Delita Noor Iftitah.jpg" alt="Profil Saya" width="200" height="300">
   <h1>Nama: Nama Anda</h1>
@@ -46,7 +46,7 @@ function cekBuku() {
   <h2>Kelas: Kelas Anda</h2>
 </div>
 
-<!-- NOMOR 2 -->
+<!-- SOAL NOMOR 2 -->
 <div>
   <input type="text" id="jumlah" placeholder="Jumlah Buku">
   <select id="buku">
