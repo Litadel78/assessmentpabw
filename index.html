@@ -20,6 +20,11 @@
                     alert('Buku tidak ditemukan!');
                     return;
                 }
+                // NOMOR 7
+                if (parseInt(jumlah) > bukuTersedia.jumlah) {
+                    alert('Jumlah buku tidak tersedia!');
+                    return;
+                }
             }
 
             // SOAL NOMOR 4
