@@ -14,6 +14,12 @@
                     alert('Jumlah tidak boleh kosong atau Nol!');
                     return;
                 }
+                // NOMOR 6
+                var bukuTersedia = buku.find(b => b.nama === bukuDipilih);
+                if (!bukuTersedia) {
+                    alert('Buku tidak ditemukan!');
+                    return;
+                }
             }
 
             // SOAL NOMOR 4
