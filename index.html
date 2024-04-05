@@ -9,6 +9,11 @@
             function cekBuku() {
                 var jumlah = document.getElementById('jumlah').value;
                 var bukuDipilih = document.getElementById('buku').value;
+                // SOAL NOMOR 5
+                if (jumlah === '' || parseInt(jumlah) <= 0) {
+                    alert('Jumlah tidak boleh kosong atau Nol!');
+                    return;
+                }
             }
 
             // SOAL NOMOR 4
@@ -23,7 +28,7 @@
     <!-- SOAL NOMOR 1 -->
     <body>
         <div>
-            <img src="Foto Formal_Delita Noor Iftitah.jpg" alt="Profil Saya">
+            <img src="Foto Formal_Delita Noor Iftitah.jpg" alt="Profil Saya" width="200" height="300">
             <h1>Nama : Delita Noor Iftitah</h1>
             <h2>NIM : 6701223082</h2>
             <h2>Kelas : D3SI 46-01</h2>
@@ -37,7 +42,7 @@
                 <option value="lupin">Lupin</option>
                 <option value="aladin">Aladin</option>
             </select>
-            <button onclick></button>
+            <button onclick="cekBuku()">Cek Ketersediaan</button>
         </div>
     </body>
 </html>
